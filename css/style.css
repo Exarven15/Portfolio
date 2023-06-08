@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styles de base pour la navbar */
+nav {
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+li {
+    margin: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+a:hover {
+    background-color: #ccc;
+}
+
+/* Styles pour la navigation responsive */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#container-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background-color: red;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    padding: 3% 0 3% 0;
+    flex-direction: column;
+}
+
+#title {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#sub {
+    text-align: end;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    list-style: none;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+#project {
+    height: 100vh;
+}
+
+#project>details[open] {
+    height: 25vh;
+}
+
+#de-pro {
+    margin-top: 8%;
+}
+
+input[type=submit] {
+    width: 33%;
+    height: 20vh;
+}
+
+/* Styles pour les écrans de petite taille */
+@media only screen and (max-width: 600px) {
+    #container-title {
+        width: 80%;
+        height: 20%;
+    }
+    #project>details[open] {
+        height: 40vh;
+    }
+    
+    #de-pro {
+        height: 35vh;
+        margin-top: 8%;
+        
+    }
+    form{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    input[type=submit] {
+        width: 100%;
+        height: 10vh;
+    }
+    #title {
+        font-size: 20px;
+    }
+
+    #sub {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #container-title {
+        width: 60%;
+        height: 12%;
+    }
+
+    #title {
+        font-size: 26px;
+    }
+
+    #sub {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* Styles pour les écrans de grande taille */
+@media only screen and (min-width: 1025px) {
+    #container-title {
+        width: 40%;
+        height: 10%;
+    }
+
+    #title {
+        font-size: 32px;
+    }
+
+    #sub {
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
